@@ -1,17 +1,29 @@
 package com.example.routes
 
 import com.example.models.ApiResponse
+import com.example.repository.HeroRepository
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.response.respond
 import io.ktor.server.routing.Route
 import io.ktor.server.routing.get
+import org.koin.ktor.ext.get
+import org.koin.ktor.ext.inject
 
 fun Route.getAllHeroes(){
+
     get("/boruto/heroes"){
+        val heroRepository = call.application.get<HeroRepository>()
+
         try {
             val page = call.request.queryParameters["page"]?.toInt() ?: 1
             require(page in 1..5)
-            call.respond(message = page)
+
+            val apiResponse = heroRepository.getAllHeroes(page = page)
+
+            call.respond(
+                message = apiResponse,
+                status = HttpStatusCode.OK
+            )
         }  catch (e : NumberFormatException){
             call.respond(
                 message = ApiResponse(false, "Only numbers are allowed."),
@@ -19,8 +31,8 @@ fun Route.getAllHeroes(){
             )
         } catch (e: IllegalArgumentException){
             call.respond(
-                message = ApiResponse(false, "Only 1 to 5 pages are available."),
-                status = HttpStatusCode.BadRequest
+                message = ApiResponse(false, "Heroes not Found."),
+                status = HttpStatusCode.NotFound
             )
         }
     }
