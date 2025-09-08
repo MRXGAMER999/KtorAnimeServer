@@ -14,18 +14,18 @@ version = "0.0.1"
 
 application {
     mainClass = "io.ktor.server.netty.EngineMain"
-    applicationDefaultJvmArgs = listOf("--enable-native-access=ALL-UNNAMED")
+
 }
 
 dependencies {
     implementation("io.ktor:ktor-server-core:$ktor_version")
-    // Note: ktor-server-routing is included in ktor-server-core in Ktor 3.x
+
     implementation("io.ktor:ktor-server-content-negotiation:$ktor_version")
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
     implementation("io.ktor:ktor-server-call-logging:$ktor_version")
     implementation("io.ktor:ktor-server-netty:$ktor_version")
-    implementation("io.insert-koin:koin-ktor:4.0.0")
-    implementation("io.insert-koin:koin-logger-slf4j:4.0.0")
+    implementation("io.insert-koin:koin-ktor:$koin_version")
+    implementation("io.insert-koin:koin-logger-slf4j:$koin_version")
     implementation("ch.qos.logback:logback-classic:$logback_version")
     implementation("io.ktor:ktor-server-default-headers:$ktor_version")
     testImplementation("io.ktor:ktor-server-test-host:$ktor_version")
