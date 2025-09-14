@@ -11,7 +11,7 @@ import org.koin.ktor.ext.inject
 fun Routing.searchHeroes() {
 
 
-    get("/boruto/heroes/search") {
+    get("/anime/heroes/search") {
         val heroRepository = call.application.get<HeroRepository>()
         val name = call.request.queryParameters["name"]
 
