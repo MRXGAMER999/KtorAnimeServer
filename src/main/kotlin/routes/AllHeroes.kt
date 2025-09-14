@@ -11,7 +11,7 @@ import org.koin.ktor.ext.inject
 
 fun Route.getAllHeroes(){
 
-    get("/boruto/heroes"){
+    get("/anime/heroes"){
         val heroRepository = call.application.get<HeroRepository>()
 
         try {
