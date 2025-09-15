@@ -403,7 +403,8 @@ class HeroRepositoryImpl : HeroRepository {
             message = "ok",
             prevPage = calcPage(page)[PREV_PAGE_KEY] ,
             nextPage = calcPage(page) [NEXT_PAGE_KEY],
-            heroes = heroes[page]!!
+            heroes = heroes[page]!!,
+            lastUpdated = System.currentTimeMillis()
         )
     }
     private fun calcPage(page: Int): Map<String , Int?> {
