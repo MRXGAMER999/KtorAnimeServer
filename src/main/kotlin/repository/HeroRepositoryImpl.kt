@@ -47,7 +47,8 @@ class HeroRepositoryImpl : HeroRepository {
                 "Wind",
                 "Earth",
                 "Water"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 2,
@@ -76,7 +77,8 @@ class HeroRepositoryImpl : HeroRepository {
                 "Earth",
                 "Lava",
                 "Fire"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 3,
@@ -103,7 +105,8 @@ class HeroRepositoryImpl : HeroRepository {
                 "Earth",
                 "Water",
                 "Fire"
-            )
+            ),
+            category = "Boruto"
         )
     )
     override val page2 = listOf(
@@ -133,7 +136,8 @@ class HeroRepositoryImpl : HeroRepository {
                 "Lightning",
                 "Wind",
                 "Water"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 5,
@@ -157,7 +161,8 @@ class HeroRepositoryImpl : HeroRepository {
                 "Lightning",
                 "Wind",
                 "Fire"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 6,
@@ -180,7 +185,8 @@ class HeroRepositoryImpl : HeroRepository {
             natureTypes = listOf(
                 "Lightning",
                 "Wind"
-            )
+            ),
+            category = "Boruto"
         )
     )
     override val page3 = listOf(
@@ -203,7 +209,8 @@ class HeroRepositoryImpl : HeroRepository {
             ),
             natureTypes = listOf(
                 "Fire"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 8,
@@ -229,7 +236,8 @@ class HeroRepositoryImpl : HeroRepository {
                 "Fire",
                 "Earth",
                 "Water"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 9,
@@ -253,7 +261,8 @@ class HeroRepositoryImpl : HeroRepository {
                 "Fire",
                 "Earth",
                 "Water"
-            )
+            ),
+            category = "Boruto"
         )
     )
     override val page4 = listOf(
@@ -278,7 +287,8 @@ class HeroRepositoryImpl : HeroRepository {
             ),
             natureTypes = listOf(
                 "Fire"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 11,
@@ -303,7 +313,8 @@ class HeroRepositoryImpl : HeroRepository {
                 "Wind",
                 "Water",
                 "Earth"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 12,
@@ -327,7 +338,8 @@ class HeroRepositoryImpl : HeroRepository {
                 "Lightning",
                 "Wind",
                 "Earth"
-            )
+            ),
+            category = "Boruto"
         )
     )
     override val page5 = listOf(
@@ -350,7 +362,8 @@ class HeroRepositoryImpl : HeroRepository {
             ),
             natureTypes = listOf(
                 "Unknown"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 14,
@@ -371,7 +384,8 @@ class HeroRepositoryImpl : HeroRepository {
             ),
             natureTypes = listOf(
                 "Unknown"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 15,
@@ -393,7 +407,8 @@ class HeroRepositoryImpl : HeroRepository {
             natureTypes = listOf(
                 "Fire",
                 "Earth"
-            )
+            ),
+            category = "Boruto"
         )
     )
 
@@ -446,6 +461,4 @@ class HeroRepositoryImpl : HeroRepository {
         }
         return emptyList()
     }
-
-
 }

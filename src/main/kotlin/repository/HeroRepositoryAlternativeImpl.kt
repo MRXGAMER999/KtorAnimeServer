@@ -6,6 +6,7 @@ import com.example.models.Hero
 
 class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
 
+
     override val heroes = listOf(
         Hero(
             id = 1,
@@ -36,7 +37,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
                 "Wind",
                 "Earth",
                 "Water"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 2,
@@ -65,7 +67,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
                 "Earth",
                 "Lava",
                 "Fire"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 3,
@@ -92,7 +95,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
                 "Earth",
                 "Water",
                 "Fire"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 4,
@@ -120,7 +124,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
                 "Lightning",
                 "Wind",
                 "Water"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 5,
@@ -144,7 +149,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
                 "Lightning",
                 "Wind",
                 "Fire"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 6,
@@ -167,7 +173,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             natureTypes = listOf(
                 "Lightning",
                 "Wind"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 7,
@@ -188,7 +195,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             ),
             natureTypes = listOf(
                 "Fire"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 8,
@@ -214,7 +222,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
                 "Fire",
                 "Earth",
                 "Water"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 9,
@@ -238,7 +247,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
                 "Fire",
                 "Earth",
                 "Water"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 10,
@@ -261,7 +271,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             ),
             natureTypes = listOf(
                 "Fire"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 11,
@@ -286,7 +297,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
                 "Wind",
                 "Water",
                 "Earth"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 12,
@@ -310,7 +322,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
                 "Lightning",
                 "Wind",
                 "Earth"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 13,
@@ -331,7 +344,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             ),
             natureTypes = listOf(
                 "Unknown"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 14,
@@ -352,7 +366,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             ),
             natureTypes = listOf(
                 "Unknown"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 15,
@@ -374,7 +389,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             natureTypes = listOf(
                 "Fire",
                 "Earth"
-            )
+            ),
+            category = "Boruto"
         ),
         Hero(
             id = 16,
@@ -387,7 +403,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "14th",
             family = listOf("Nezuko", "Tanjuro", "Kie", "Takeo", "Hanako", "Shigeru", "Rokuta"),
             abilities = listOf("Water Breathing", "Sun Breathing", "Enhanced Smell"),
-            natureTypes = listOf("Water", "Fire")
+            natureTypes = listOf("Water", "Fire"),
+            category = "Demon Slayer"
         ),
         Hero(
             id = 17,
@@ -400,7 +417,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "28th",
             family = listOf("Tanjiro", "Tanjuro", "Kie", "Takeo", "Hanako", "Shigeru", "Rokuta"),
             abilities = listOf("Demon Physiology", "Blood Demon Art", "Enhanced Strength"),
-            natureTypes = listOf("Fire", "Blood")
+            natureTypes = listOf("Fire", "Blood"),
+            category = "Demon Slayer"
         ),
         Hero(
             id = 18,
@@ -413,7 +431,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "3rd",
             family = listOf("Unknown"),
             abilities = listOf("Thunder Breathing", "Enhanced Hearing"),
-            natureTypes = listOf("Lightning")
+            natureTypes = listOf("Lightning"),
+            category = "Demon Slayer"
         ),
         Hero(
             id = 19,
@@ -426,7 +445,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "22nd",
             family = listOf("Kotoha Hashibira"),
             abilities = listOf("Beast Breathing", "Enhanced Senses", "Flexibility"),
-            natureTypes = listOf("Earth")
+            natureTypes = listOf("Earth"),
+            category = "Demon Slayer"
         ),
         Hero(
             id = 20,
@@ -439,7 +459,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "19th",
             family = listOf("Shinobu", "Kanae"),
             abilities = listOf("Flower Breathing", "Enhanced Vision"),
-            natureTypes = listOf("Flower", "Wind")
+            natureTypes = listOf("Flower", "Wind"),
+            category = "Demon Slayer"
         ),
         Hero(
             id = 21,
@@ -452,7 +473,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "8th",
             family = listOf("Tsutako Tomioka"),
             abilities = listOf("Water Breathing", "Enhanced Speed"),
-            natureTypes = listOf("Water")
+            natureTypes = listOf("Water"),
+            category = "Demon Slayer"
         ),
         Hero(
             id = 22,
@@ -465,7 +487,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "24th",
             family = listOf("Kanae Kocho", "Kanao Tsuyuri"),
             abilities = listOf("Insect Breathing", "Poison Mastery", "Medicine Expertise"),
-            natureTypes = listOf("Poison")
+            natureTypes = listOf("Poison"),
+            category = "Demon Slayer"
         ),
         Hero(
             id = 23,
@@ -478,7 +501,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "10th",
             family = listOf("Shinjuro", "Senjuro", "Ruka"),
             abilities = listOf("Flame Breathing", "Unmatched Spirit"),
-            natureTypes = listOf("Fire")
+            natureTypes = listOf("Fire"),
+            category = "Demon Slayer"
         ),
         Hero(
             id = 24,
@@ -491,7 +515,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "31st",
             family = listOf("Makio", "Suma", "Hinatsuru"),
             abilities = listOf("Sound Breathing", "Enhanced Speed", "Ninjutsu"),
-            natureTypes = listOf("Sound")
+            natureTypes = listOf("Sound"),
+            category = "Demon Slayer"
         ),
         Hero(
             id = 25,
@@ -504,7 +529,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "8th",
             family = listOf("Yuichiro Tokito"),
             abilities = listOf("Mist Breathing", "Enhanced Reflexes"),
-            natureTypes = listOf("Mist")
+            natureTypes = listOf("Mist"),
+            category = "Demon Slayer"
         ),
         Hero(
             id = 26,
@@ -517,7 +543,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "1st",
             family = listOf("Unknown"),
             abilities = listOf("Love Breathing", "Superhuman Strength", "Flexibility"),
-            natureTypes = listOf("Love")
+            natureTypes = listOf("Love"),
+            category = "Demon Slayer"
         ),
         Hero(
             id = 27,
@@ -530,7 +557,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "15th",
             family = listOf("Unknown"),
             abilities = listOf("Serpent Breathing", "Enhanced Reflexes"),
-            natureTypes = listOf("Snake")
+            natureTypes = listOf("Snake"),
+            category = "Demon Slayer"
         ),
         Hero(
             id = 28,
@@ -543,7 +571,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "29th",
             family = listOf("Genya Shinazugawa"),
             abilities = listOf("Wind Breathing", "Immense Strength"),
-            natureTypes = listOf("Wind")
+            natureTypes = listOf("Wind"),
+            category = "Demon Slayer"
         ),
         Hero(
             id = 29,
@@ -556,7 +585,8 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "23rd",
             family = listOf("Unknown"),
             abilities = listOf("Stone Breathing", "Superhuman Strength", "Enhanced Hearing"),
-            natureTypes = listOf("Earth")
+            natureTypes = listOf("Earth"),
+            category = "Demon Slayer"
         ),
         Hero(
             id = 30,
@@ -569,27 +599,33 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
             day = "19th",
             family = listOf("Shinobu", "Kanao"),
             abilities = listOf("Flower Breathing", "Kindness"),
-            natureTypes = listOf("Flower")
+            natureTypes = listOf("Flower"),
+            category = "Demon Slayer"
         ),
-
     )
 
-    override suspend fun getAllHeroes(page: Int, limit: Int): ApiResponse {
+    override suspend fun getAllHeroes(page: Int, limit: Int, category: String?): ApiResponse {
+        val heroesToPaginate = if (category != null) {
+            heroes.filter { it.category.equals(category, ignoreCase = true) }
+        } else {
+            heroes
+        }
+
         return ApiResponse(
             success = true,
             message = "ok",
             prevPage = calculatePage(
-                heroes = heroes,
+                heroes = heroesToPaginate,
                 page = page,
                 limit = limit
             )["prevPage"],
             nextPage = calculatePage(
-                heroes = heroes,
+                heroes = heroesToPaginate,
                 page = page,
                 limit = limit
             )["nextPage"],
             heroes = provideHeroes(
-                heroes = heroes,
+                heroes = heroesToPaginate,
                 page = page,
                 limit = limit
             ),

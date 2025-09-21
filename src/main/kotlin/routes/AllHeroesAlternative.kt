@@ -14,10 +14,13 @@ fun Route.getAllHeroesAlternative() {
     get("/anime/heroes") {
         try {
             val page = call.request.queryParameters["page"]?.toInt() ?: 1
-            val limit = call.request.queryParameters["limit"]?.toInt() ?: 20
+            val limit = call.request.queryParameters["limit"]?.toInt() ?: 5
+            val category = call.request.queryParameters["category"] ?: "Boruto"
 
             val apiResponse = heroRepositoryAlternative.getAllHeroes(
-                page = page, limit = limit
+                page = page,
+                limit = limit,
+                category = category
             )
             call.respond(
                 message = apiResponse,

@@ -1,6 +1,7 @@
 package com.example.routes
 
 import com.example.repository.HeroRepository
+import com.example.repository.HeroRepositoryAlternative
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.response.respond
 import io.ktor.server.routing.Routing
@@ -12,7 +13,7 @@ fun Routing.searchHeroes() {
 
 
     get("/anime/heroes/search") {
-        val heroRepository = call.application.get<HeroRepository>()
+        val heroRepository = call.application.get<HeroRepositoryAlternative>()
         val name = call.request.queryParameters["name"]
 
         val apiResponse = heroRepository.searchHeroes(name)
