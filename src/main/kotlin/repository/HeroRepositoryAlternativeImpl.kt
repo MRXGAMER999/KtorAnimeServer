@@ -633,6 +633,49 @@ class HeroRepositoryImplAlternative : HeroRepositoryAlternative {
         )
     }
 
+    override suspend fun getAllHeroesByCategories(page: Int, limit: Int, categories: List<String>): ApiResponse {
+        val heroesToPaginate = if (categories.isNotEmpty()) {
+            heroes.filter { hero ->
+                categories.any { category -> 
+                    hero.category.equals(category, ignoreCase = true) 
+                }
+            }
+        } else {
+            heroes
+        }
+
+        return ApiResponse(
+            success = true,
+            message = "Found ${heroesToPaginate.size} heroes from categories: ${categories.joinToString(", ")}",
+            prevPage = calculatePage(
+                heroes = heroesToPaginate,
+                page = page,
+                limit = limit
+            )["prevPage"],
+            nextPage = calculatePage(
+                heroes = heroesToPaginate,
+                page = page,
+                limit = limit
+            )["nextPage"],
+            heroes = provideHeroes(
+                heroes = heroesToPaginate,
+                page = page,
+                limit = limit
+            ),
+            lastUpdated = System.currentTimeMillis()
+        )
+    }
+
+    override suspend fun getAvailableCategories(): ApiResponse {
+        val categories = heroes.map { it.category }.distinct().sorted()
+        return ApiResponse(
+            success = true,
+            message = "Available categories: ${categories.joinToString(", ")}",
+            heroes = emptyList(),
+            lastUpdated = System.currentTimeMillis()
+        )
+    }
+
     override suspend fun searchHeroes(name: String?): ApiResponse {
         return ApiResponse(
             success = true,
